@@ -11,7 +11,7 @@
 			<p:panelGrid columns="2" styleClass="fullsize sinborde">
 				<p:outputLabel value="Subir Archivo" />
 				<p:fileUpload update=":frm_par_026:msg,:frm_par_026:dtbFaltanteInv"
-					fileUploadListener="#{FaltanteInventarioBn.listenerConsumo}"
+					fileUploadListener="#{FaltanteInventarioBn.listenerInv}"
 					mode="advanced" label="Cargar" auto="true"
 					allowTypes="/(\.|\/)(xlsx|xls|csv)$/" />
 			</p:panelGrid>

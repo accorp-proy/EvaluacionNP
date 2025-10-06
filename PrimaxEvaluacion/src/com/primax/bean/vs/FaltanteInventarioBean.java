@@ -66,7 +66,7 @@ public class FaltanteInventarioBean extends BaseBean implements Serializable {
 		}
 	}
 
-	public void listenerConsumo(FileUploadEvent event) {
+	public void listenerInv(FileUploadEvent event) {
 		try {
 			String nombre = event.getFile().getFileName();
 			FaltanteInventarioEt cabExiste = new FaltanteInventarioEt();
@@ -100,7 +100,7 @@ public class FaltanteInventarioBean extends BaseBean implements Serializable {
 		} catch (Exception e) {
 			e.printStackTrace();
 			showInfo("Error Archivo cargado ", FacesMessage.SEVERITY_INFO);
-			System.out.println("Error :Método listenerConsumo " + " " + e.getMessage());
+			System.out.println("Error :Método listenerInv " + " " + e.getMessage());
 		}
 	}
 
