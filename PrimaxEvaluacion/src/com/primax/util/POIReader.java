@@ -96,6 +96,7 @@ public class POIReader {
 							}
 							break;
 						default:
+							System.out.println("Valor Cell Obtenido :" + c.getStringCellValue());
 							celda.setValue(c.getStringCellValue());
 							break;
 						}
